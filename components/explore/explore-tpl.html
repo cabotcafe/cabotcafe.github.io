@@ -1,12 +1,12 @@
 <div class="row">
-  <div class="col-md-6">
+  <div class="col-md-5">
     <a href="http://cabotcafe.com/" target="_blank">
       <img src="images/cafelogo.png" style="height:100px">
     </a>
     <h1 id="live-title">EXPLORE</h1>
     <h4><a href="#/live" class="header-link">Go to <span style="font-family: Ritz">LIVE!</span></a></h4>
   </div>
-  <div class="col-md-6">
+  <div class="col-md-7">
   <div class="tab-content">
     <ul class="nav nav-pills">
       <li role="presentation" ng-class="{active: venue.id == ctrl.venue.id}" ng-repeat="venue in ctrl.venues" ng-click="ctrl.venueClick(venue)"><a href="">{{venue.name}}</a></li>
@@ -26,7 +26,7 @@
 
   <div class="col-md-6">
     <div style="min-height:360px">
-      <h3>Browsing Concerts at {{ctrl.venue.name}}</h3>
+      <h3>Browse Concerts at {{ctrl.venue.name}}</h3>
     <div class="tab-content">
       <ul class="nav nav-pills nav-stacked">
         <li role="concerts" ng-class="{active: concert.title == ctrl.selected.concert.title}" dir-paginate="concert in ctrl.concerts | itemsPerPage: 8" ng-click="ctrl.select(concert)" style="text-align:center"><a href="">{{concert.title}} on {{concert.datetime_local | date: 'EEEE, M/d'}}</a></li>

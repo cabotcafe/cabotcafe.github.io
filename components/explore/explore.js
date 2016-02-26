@@ -141,7 +141,7 @@ module.directive('explore', [function() {
         var that = this;
         this.venues = [{
           id:"sinclair",
-          name:"Sinclair",
+          name:"The Sinclair",
           location: {
             latitude: 42.374446,
             longitude:-71.120633
@@ -160,6 +160,22 @@ module.directive('explore', [function() {
             latitude: 42.347600,
             longitude:-71.095636
           }
+          }, {
+          id:"great+scott",
+          name:"Great Scott",
+          location: {
+            latitude: 42.350252,
+            longitude:-71.130623
+          }
+        
+        },{
+          id:"royale",
+          name:"Royale",
+          location: {
+            latitude: 42.350087,
+            longitude:-71.065623
+          }
+        
         }];
         this.venue = this.venues[0];
         this.concert = null;
