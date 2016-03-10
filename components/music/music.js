@@ -57,7 +57,7 @@ module.directive('music', [function() {
         
         // Array of suggested songs
         this.suggested = [];
-        this.aow_id = "2W4nAGbIoRe7ycMV4WLxBL";
+        this.aow_id = "6lsVXC9dQAi4x1sHQP5jaA";
         this.aow_url = $sce.trustAsResourceUrl("https://embed.spotify.com/?uri=spotify%3Aalbum%3a" + this.aow_id);
         
         this.loadAow(this.aow_id);
